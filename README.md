@@ -92,13 +92,12 @@ Tehnologija je **stabilna, aktivno razvita in dolgoročno podprta**.
 
 ### Dodajanje odvisnosti (Gradle)
 
-![Implementation](img/ds_implementation.png)
-
-### Demo
-
-![Demo](img/ds_demo.png)
-
 ```gradle
 dependencies {
     implementation "androidx.datastore:datastore-preferences:1.0.0"
 }
+
+
+### Demo
+
+![Demo](img/ds_demo.png)
