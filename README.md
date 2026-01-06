@@ -96,7 +96,7 @@ Tehnologija je **stabilna, aktivno razvita in dolgoročno podprta**.
 dependencies {
     implementation "androidx.datastore:datastore-preferences:1.0.0"
 }
-
+```
 
 ### Demo
 
