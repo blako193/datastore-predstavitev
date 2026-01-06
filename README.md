@@ -89,7 +89,14 @@ Tehnologija je **stabilna, aktivno razvita in dolgoročno podprta**.
 
 ## 9. Kako vključimo DataStore v projekt
 
+
 ### Dodajanje odvisnosti (Gradle)
+
+![Implementation](img/ds_implementation.png)
+
+### Demo
+
+![Demo](img/ds_demo.png)
 
 ```gradle
 dependencies {
