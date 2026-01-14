@@ -34,6 +34,30 @@ Izbrana je bila zato, ker predstavlja **uradno priporočeno rešitev Googla** za
 - Dobro se povezuje z ostalimi Jetpack komponentami
 
 ---
+### 3.1 Primerjava Preferences(key-value) DataStore in Proto DataStore
+
+- **Struktura podatkov**
+Preferences DataStore
+Key–value (kot SharedPreferences, ampak bolj moderno)
+Tipi so omejeni: String, Int, Long, Boolean, Float, Double, Set<String>
+Dostop: preferences[stringPreferencesKey("token")]
+Proto DataStore
+Shrani celoten objekt (npr. “settings model”) kot Protobuf message
+Polja so tipizirana v .proto shemi
+Dostop: dataStore.data.map { it.token }
+- **Tipna varnost (type safety)**
+Preferences: manj tipno varno (ključi + tipi v kodi; lažje narediš napako v ključu ali tipu)
+Proto: zelo tipno varno (schema + generirana klasa; manj runtime napak)
+- **Razvoj sheme (schema changes)**
+Preferences: “schema” je implicitna; rename ključa = tiha sprememba, migracije so ročne
+Proto: dodajanje polj je enostavno,
+odstranitev/rename zahteva previdnost, ampak ima jasna pravila (field numbers)
+- **Kompleksnost in setup**
+Preferences: najlažji start, minimalen boilerplate
+Proto: zahteva .proto datoteko
+protobuf plugin + serializer
+malo več nastavitev
+---
 
 ## 4. Slabosti
 
