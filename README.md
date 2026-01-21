@@ -3,7 +3,10 @@
 Repozitorij: https://github.com/androidx/androidx/tree/androidx-main/datastore
 
 ---
+Vključena uporaba v projektu:
+https://github.com/3-letnik-UN-2025-2026/pora-my-second-app-blako193
 
+---
 ## 1. Kaj je DataStore?
 
 **DataStore** je sodobna knjižnica iz paketa **AndroidX**, namenjena shranjevanju ključ–vrednost podatkov ali tipiziranih objektov v Android aplikacijah.  
